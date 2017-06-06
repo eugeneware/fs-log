@@ -3,8 +3,7 @@ const it = require('tape-promise').default(tape);
 const fsLog = require('../fs-log');
 const test = require('abstract-log');
 const tmpfile = require('tmpfile');
-const { promisify } = require('util');
-const unlink = promisify(require('fs').unlink);
+const fs = require('pn/fs');
 
 const common = {
   setup: async (t) => {
@@ -13,7 +12,7 @@ const common = {
     return fsLog(dbPath);
   },
   teardown: async (t, log) => {
-    await unlink(log.dbPath);
+    await fs.unlink(log.dbPath);
   }
 };
 
