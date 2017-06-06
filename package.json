@@ -1,6 +1,6 @@
 {
   "name": "fs-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File System implementation of abstract-log. Append only log using files.",
   "main": "fs-log.js",
   "scripts": {
