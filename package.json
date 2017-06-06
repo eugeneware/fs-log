@@ -1,0 +1,44 @@
+{
+  "name": "fs-log",
+  "version": "1.0.0",
+  "description": "File System implementation of abstract-log. Append only log using files.",
+  "main": "fs-log.js",
+  "scripts": {
+    "lint": "semistandard",
+    "test": "tape test/*.js",
+    "watch": "onchange -i './**/*.js' -- npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeneware/fs-log"
+  },
+  "keywords": [
+    "abstract-log",
+    "fs",
+    "file",
+    "file-system",
+    "log",
+    "logging",
+    "logs",
+    "kafka"
+  ],
+  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/eugeneware/fs-log/issues"
+  },
+  "dependencies": {
+    "abstract-log": "^3.0.3",
+    "fs-tail-stream": "^1.1.0",
+    "pn": "^1.0.0",
+    "split2": "^2.1.1",
+    "stream-combiner2": "^1.1.1",
+    "tmpfile": "^0.2.0"
+  },
+  "devDependencies": {
+    "onchange": "^3.2.1",
+    "semistandard": "^11.0.0",
+    "tape": "^4.4.0",
+    "tape-promise": "^2.0.1"
+  }
+}
